@@ -32,11 +32,25 @@ O que esta dentro dos balões terá de ser realizado pelo software.
 Retiram o bonequinho software.
 
 5) Pelo que esta escrito na seção 3.2 teremos as classes:
-- CAmostra representando uma amostra (identificação da amostra, quem coletou e descrição).
-- Uma herdeira CAmostraFluido representando uma amostra de fluido. Deve ter propriedades básicas de fluidos usadas nos cálculos.
-- Uma herdeira CAmostraAgua. A classe CAmostraAgua tem um grauIncrustacao.
+- CAmostra representando uma amostra
+(identificação da amostra - id, quem coletou/preparou e descrição texto).
 
-- Uma classe CSal. Classe que representa um sal específico(nome), tem de consultar livro de química para ver propriedades e funcionalidades associadas ao sal e que são  necessárias para os cálculos a serem realizados.
+- Uma herdeira CAmostraFluido representando uma amostra de fluido.
+Deve ter propriedades básicas de fluidos usadas nos cálculos.
+O técnico de laboratório de química vai preparar uma AMOSTRA.
+Que é uma realização da classe CAmostraFluido.
+Tem um peso, volume.
+densidade? viscosidade? propriedades usadas do fluido.
+CAmostraFluido vai ter um Ph.
+Tem um vetor ou map de sais.
+Se for map vai ter o tipo de sal e a concentracao.
+std::map<CSal,double> salConcentracao;
+
+- Uma classe CSal: tem o nome do sal e eventualmente simbolo.
+Classe que representa um sal específico(nome).
+
+Tem de consultar livro de química para ver propriedades e funcionalidades associadas ao sal e que são  necessárias para os cálculos a serem realizados.
+
 Exemplos de objetos sais? [da fig 4]:
 - brometo, acetato, cloreto, sulfato,bicarbonato, ...
 Note que se o calculo realizado na classe CSal for o mesmo para todos os sais não teremos herdeiros. Mas se o modelo de cálculo do sal muda para cada sal, então teremos herdeiros.

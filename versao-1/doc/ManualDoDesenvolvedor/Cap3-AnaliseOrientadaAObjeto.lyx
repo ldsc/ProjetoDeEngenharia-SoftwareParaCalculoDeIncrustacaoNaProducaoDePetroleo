@@ -228,11 +228,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaClasses.png
-=======
 	filename imagens/DiagramaDeClasses.png
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	lyxscale 50
 	width 100text%
 
@@ -401,13 +397,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaSequencia-Eventos.png
-	lyxscale 40
-=======
 	filename imagens/DiagramaDeSequencia-Eventos.png
 	lyxscale 50
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -558,12 +549,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaComunicacao.png
-=======
 	filename imagens/DiagramaDeComunicacao.png
 	lyxscale 85
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -670,13 +657,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaEstados.png
-	lyxscale 30
-=======
 	filename imagens/DiagramaDeEstado-ClasseSimulador.png
 	lyxscale 85
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
 	width 100text%
 
 \end_inset
@@ -766,13 +748,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-<<<<<<< HEAD:doc/manualDesenvolvedor-lyx/Cap3-AnaliseOrientadaAObjeto.lyx
-	filename imagens/DiagramaAtividade.png
-	lyxscale 40
-=======
-	filename imagens/DiagramaDeAtividade-ClasseIntegral-MetodoArea.png
-	lyxscale 85
->>>>>>> 799275a (Atualizações diversas nas imagens e arquivos do lyx):doc/ManualDoDesenvolvedor/Cap3-AnaliseOrientadaAObjeto.lyx
+	filename imagens/DiagramaDeAtividade-NomeClasse-NomeMetodo.png
+	lyxscale 150
 	width 100text%
 
 \end_inset

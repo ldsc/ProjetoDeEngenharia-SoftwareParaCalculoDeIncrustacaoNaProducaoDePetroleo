@@ -219,20 +219,55 @@ a de software aplicado a solução de um problema específico de engenharia
  
 \end_layout
 
-\begin_layout Itemize
-Definir o escopo do projeto de engenharia, a ideia geral do software, acentuar
- sua importância, usos e aplicações em engenharia [de petróleo].
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/TubulacaoComIncrustacao.png
+	width 100text%
+
+\end_inset
+
+
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Atualizar/trocar as figuras deste modelo!!
 \end_layout
 
-\begin_layout Itemize
-Delimitar o assunto.
- Situá-lo no tempo e no espaço.
- Situá-lo em relação a outros softwares.
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Neste capítulo podem entrar figuras que ilustram a ideia geral, o detalhamento
- será feito depois, na elaboração.
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tubulação de descarte de água incrustada .
+\begin_inset CommandInset label
+LatexCommand label
+name "cap: TubDescarte"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
