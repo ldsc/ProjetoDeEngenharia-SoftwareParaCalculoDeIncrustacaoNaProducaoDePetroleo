@@ -136,7 +136,7 @@ filename "Cap0-Capa-ProjetoDisciplina.lyx"
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Este documento usa modelo de documento: Livro padrão extendido do latex,
@@ -228,32 +228,6 @@ usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap0-Capa-ProjetoTCC.lyx"
-
-\end_inset
-
-Use esta capa se for seu TCC;
-\end_layout
-
-\begin_layout Plain Layout
-Note que embora a estrutura seja a mesma, o projeto de TCC deve ser mais
- completo e detalhado.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -282,31 +256,6 @@ LatexCommand tableofcontents
 \align block
 \begin_inset CommandInset toc
 LatexCommand lstlistoflistings
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align block
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap0b-ResumoAbstract.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-Adicione um resumo/abstract se for seu TCC
-\end_layout
 
 \end_inset
 
