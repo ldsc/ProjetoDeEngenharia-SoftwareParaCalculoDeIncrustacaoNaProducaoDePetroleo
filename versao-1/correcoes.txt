@@ -1,0 +1,86 @@
+
+Atividades realizadas:
+- Movi os arquivos para dentro dos diretórios corretos;
+- Em versao-1/doc/ManualDoDesenvolvedor estão os arquivos do lyx.
+- Em versao-1/doc/uml estão os arquivos do umbrello e imagens.
+
+Tarefas:
+========
+1) - Deixe apenas um arquivo do umbrello.
+Pode ter cópias, mas deve ter um único arquivo principal.
+As cópias não são carregadas no github.
+
+2) Renomear as figuras, os nomes não devem ter espaço nem acentos.
+As figuras estão dentro de ManualDoDesenvolvedor/imagens.
+Notem que neste diretório já tinha as figuras. Bastava gerar as versões específicas e copiar para cá com os mesmos nomes (sobrescrever as do modelo).
+
+3) Vocês tem de pegar o texto que esta no arquivo
+'WSS - Nicolau e Joao.lyx'
+e colocar nos arquivos corretos.
+Ou seja, mover para dentro dos arquivos corretos.
+
+Por exemplo, a parte de introdução/escopo/objetivos deve ir para o capítulo "Cap0-Introducao-Escopo-Objetivos-Metodologia.lyx".
+Vai ter de corrigir o link para as imagens pois mudaram de diretório e retiraram os acentos e espaços.
+
+Aprender a usar arquivos mestre faz parte das competências e habilidades a serem adquiridas.
+
+Depois gerem o pdf.
+
+4) Figura 2:
+- Falei em sala que não existe um bonequinho software...
+O que esta dentro dos balões terá de ser realizado pelo software.
+Retiram o bonequinho software.
+
+5) Pelo que esta escrito na seção 3.2 teremos as classes:
+- CAmostra representando uma amostra (identificação da amostra, quem coletou e descrição).
+- Uma herdeira CAmostraFluido representando uma amostra de fluido. Deve ter propriedades básicas de fluidos usadas nos cálculos.
+- Uma herdeira CAmostraAgua. A classe CAmostraAgua tem um grauIncrustacao.
+
+- Uma classe CSal. Classe que representa um sal específico(nome), tem de consultar livro de química para ver propriedades e funcionalidades associadas ao sal e que são  necessárias para os cálculos a serem realizados.
+Exemplos de objetos sais? [da fig 4]:
+- brometo, acetato, cloreto, sulfato,bicarbonato, ...
+Note que se o calculo realizado na classe CSal for o mesmo para todos os sais não teremos herdeiros. Mas se o modelo de cálculo do sal muda para cada sal, então teremos herdeiros.
+Se os cálculos para cada sal são simples, pode-se pensar em criar uma classe CModeloTermodinamicoPrecipitacao que tem funções para cálculo de cada sal.
+Tem vínculo com CSal.
+
+- Deve ter uma classe CSimuladorIncrustracao, que será o gerente que conecta todas as demais classes.
+
+- Mas precisamos conversar para fazer ajustes.
+
+6) Corrijam o texto de softwares especiais; podem dizer que eles poderão ser utilizados para válidar cálculos feitos. mas os cálculos tem de ser feitos no programa que irão desenvolver!
+
+7- na figura 3
+Renomear para Diagrama de Assuntos, pois alí colocaram assuntos;
+Um diagrama de pacotes vai ter os componentes do software, componentes físicos como bibliotecas desenvolvidas.
+Enfim, diagrama de assuntos é algo mais teórico, diagrama de pacotes são os componentes do software.
+
+8- na figura 4
+- Jamais usam espaços e acentos!
+Refazer considerando as classes que listei acima;
+Notem que a classe CIncrustacao deve ser renomeada para CSimuladorIncrustracao.
+- O calculo de incrustacao deve estar dentro da classe CSimuladorIncrustracao.
+- Não existe classe CParametros... o ph, temperatura e pressão são propriedades da amostra de fluido.
+- Não existe CConcentracao_Sais. Isso provavelmente é uma tabela de resultados que será gerada. Pode-se usar um mapa do tipo map<Csal,double> sendo o double a concentracao do sal específico.
+Precisamos conversar para ajustes.
+
+9- Figura 5
+- troquem Usuário por Engenheiro
+- troquem amostra por amostra fluido
+- renomear WSS para algo mais legivel
+- CSimuladorIncrustracao
+- A seta de plotar valores parte do simulador e vai para o gnuplot.
+Quem pede é o simulador, quem realiza é o gnuplot.
+- O diagrama de maquina de estado deve ser para uma classe específica.
+Precisa informar no diagrama o nome da classe.
+- note que da forma como fizeram os 3 diagramas, sequência, máquina estado e Atividades estão praticamente iguais.
+
+Lembrem:
+Diagrama de sequência representa um cenário de uso.
+Envolve o engenheiro e as várias classes acessadas/propagadas.
+
+Diagrama de máquina de estado os possíveis estados de um objeto.
+
+Diagrama de atividades o que ocorre dentro de uma função específica.
+Informar o nome da classe e o nome do método:
+ex: CIntegral::CalculoArea(limInf, limSup);
+
