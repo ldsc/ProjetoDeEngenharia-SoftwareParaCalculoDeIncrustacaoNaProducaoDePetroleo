@@ -148,23 +148,8 @@ name "sec:Elaboração"
 \end_layout
 
 \begin_layout Standard
-Depois da definição dos objetivos, da especificação do software e da montagem
- dos primeiros diagramas de caso de uso, a equipe de desenvolvimento do
- projeto de engenharia passa por um processo de elaboração que envolve o
- estudo de conceitos relacionados ao sistema a ser desenvolvido, a análise
- de domínio e a identificação de pacotes.
- 
-\end_layout
-
-\begin_layout Standard
-Na elaboração fazemos uma análise dos requisitos, ajustando os requisitos
- iniciais de forma a desenvolver um sistema útil, que atenda às necessidades
- do usuário e, na medida do possível, permita seu reuso e futura extensão.
-\end_layout
-
-\begin_layout Standard
-Eliminam-se os requisitos "impossíveis" e ajusta-se a idéia do sistema de
- forma que este seja flexível, considerando-se aspectos como custos e prazos.
+Neste capítulo será apresentada a elaboração do programa desenvolvido WSS,
+ que, no caso, foi feita através de pesquisas bibliográficas.
 \end_layout
 
 \begin_layout Section
@@ -179,30 +164,20 @@ name "sec:Análise-de-domínio"
 \end_layout
 
 \begin_layout Standard
-Após estudo dos requisitos/especificações do sistema, algumas entrevistas,
- estudos na biblioteca e disciplinas do curso foi possível identificar nosso
- domínio de trabalho:
+O desenvolvimento deste software está focado na área de produção do óleo,
+ onde o objetivo é extrair petróleo de reservatórios.
+ Para atingir esse objetivo, são analisadas informações sobre a composição
+ da salmoura, à semelhança dos corpos d’água onde ocorre a produção de petróleo.
+ Isso inclui concentrações de certos sais, como brometo, estrôncio, bicarbonato,
+ sódio, bário e magnésio.E análise do ph.
 \end_layout
 
-\begin_layout Itemize
-Definição e caracterização do domínio a ser investigado 
-\end_layout
-
-\begin_layout Itemize
-Descrição das áreas/disciplinas relacionadas.
-\end_layout
-
-\begin_layout Itemize
-Descrição de questões associadas a espaço/tempo (espaço físico, local, instalaçã
-o).
-\end_layout
-
-\begin_layout Itemize
-Fotografias de sistemas equivalentes/parecidos.
-\end_layout
-
-\begin_layout Itemize
-...
+\begin_layout Standard
+A compreensão dessas concentrações nos permite criar um software que pode
+ contabilizar possíveis incrustações nessa área.
+ Esta análise permite desenvolver um plano de ação para abordar potenciais
+ questões relacionadas à escala.
+ 
 \end_layout
 
 \begin_layout Section
@@ -217,53 +192,248 @@ name "sec:Formulação-teórica"
 \end_layout
 
 \begin_layout Standard
-...coloque aqui texto explicando a formulação física-matemática, a descrição
- das equações que serão utilizadas...
+O cálculo do potencial de incrustação é um processo complexo que requer
+ uma compreensão detalhada da composição química da água e dos fatores termodinâ
+micos que influenciam a formação de depósitos sólidos.
+ Abaixo, será exemplificado como realizar esse cálculo:
+\end_layout
+
+\begin_layout Enumerate
+Entenda a composição da água: Colete dados sobre a composição química da
+ água.
+ Estes incluem concentrações de cálcio (Ca²⁺), magnésio (Mg²⁺), sulfato
+ (SO₄²⁻) ), bicarbonato (HCO₃⁻) e outros íons.
+\end_layout
+
+\begin_layout Enumerate
+Identificação de sais precipitáveis: Considerando as concentrações dos íons
+ identificados, determine quais sais podem ser precipitados da água.
+ Alguns sais comuns incluem carbonato de cálcio (CaCO₃), sulfato de bário
+ (BaSO₄) e fosfato de magnésio (Mg₃(PO₄)₂).
+\end_layout
+
+\begin_layout Enumerate
+Cálculo termodinâmico: Use um modelo termodinâmico (por exemplo, diagrama
+ de estabilidade de fase) para calcular a saturação de água associada a
+ estes sais.
+ Esses cálculos envolvem a avaliação de parâmetros como temperatura, pressão
+ e pH para determinar as condições sob as quais o sal tem maior probabilidade
+ de precipitar.
+\end_layout
+
+\begin_layout Enumerate
+Índice de Saturação (SI): Calcule o índice de saturação (SI) para cada sal.
+ IS compara a concentração real de sal na água com a concentração necessária
+ para a saturação.
+ Se IS for maior que 1, indica a presença de supersaturação e indica o potencial
+ de incrustação.
+\end_layout
+
+\begin_layout Enumerate
+Ajuste de pH: Considere o efeito do pH na solubilidade do sal.
+ Alguns íons precipitam mais facilmente em condições básicas ou ácidas.
+ Ajustar o pH pode ser uma estratégia para evitar a formação de incrustações.
+\end_layout
+
+\begin_layout Enumerate
+Software especial: A utilização de softwares especializados em química e
+ termodinâmica da água pode facilitar esses cálculos, proporcionando resultados
+ mais precisos e eficientes.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Interpretação e plano de ação: Avalie os cálculos para levar em conta o
+ potencial de incrustação.
+ Desenvolva um plano de ação, que pode incluir o uso de anti-incrustantes,
+ ajustes no tratamento da água ou outras medidas preventivas.
+ 
 \end_layout
 
 \begin_layout Standard
-...aqui entram figuras, tabelas explicativas, equações a serem utilizadas no
- software...
+Segue uma tabela com as concentrações de sais num cenário de uma salmoura
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Tabela-de-Sais"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-...logo depois, com os dados levantados na análise de domínio, e esta formulação
- teórica, iremos identificar os pacotes, os assuntos com os quais iremos
- trabalhar...
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens/TabelaDeSais.png
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tabela de sais
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Tabela-de-Sais"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-...
- no final da formulação teórica, indicar livros e artigos que tem mais informaçã
-o sobre o assunto...
+Os tipos mais comuns de incrustação são as seguintes reações: 
+\end_layout
+
+\begin_layout Enumerate
+Ba²⁺(aq) + SO₄²⁻ -> (aq) BaSO₄(s) 
+\end_layout
+
+\begin_layout Enumerate
+Sr²⁺(aq) + SO4²⁻ -> (aq) SrSO₄(s) 
+\end_layout
+
+\begin_layout Enumerate
+Ca²⁺(aq) + SO4²⁻ (aq) -> CaSO₄(s) 
 \end_layout
 
 \begin_layout Standard
-...se vai usar modelos numéricos, colocar seção 3.3.x falando deles; no final
- citar/referenciar fontes...
+Note que são as mais comuns, mas não os únicos tipos.
+ Podemos ter reações de sulfeto de ferro, zinco e chumbo, mas são menos
+ frequentes.
+ E incrustações radioativas, com rádio, chumbo e polônio, estas sendo ainda
+ menos frequentes.
+\end_layout
+
+\begin_layout Standard
+Para entendermos o problema, precisamos entender que os reservatórios de
+ petróleo são constituidos de rochas areníticas e/ou cálcarias.
+ Contendo uma enorme quantidade de dióxido de carbono (CO₂) que se encontra
+ em equílibrio químico.
+ Contudo, quando produzimos, a diferencça de pressão e temperatura muda
+ esse cenário, fazendo com que o dióxido de carbono dissolvido na aguá seja
+ deslocado para os outros fluidos, óleo e gás.
+ Assim o pH da solução aquosa aumenta, e a solubilidade, com relação ao
+ carbonato diminui rapidamente, levando à precipitação do carbonato com
+ íons divalentes, mais comumente o cálcio (CaCO₃), segundo a reação abaixo:
+ 
+\end_layout
+
+\begin_layout Standard
+Ca²⁺(aq) + 2HCO₃⁻ - (aq) CaCO₃(s) + H2O(l) + CO₂(aq)
+\end_layout
+
+\begin_layout Standard
+Para o cálculo da saturação, temos: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\backslash[IS=\backslash frac\{\backslash log\_\{10\}\backslash left(\backslash frac\{ai\_v+\}\{aj\_v-\}\backslash right)\}\{\backslash log\_\{10\}\backslash left(\backslash frac\{\backslash left[mi\backslash right]vi+\backslash left[mj\backslash right]v-\}\{yi\_v+yj\_v-\}\backslash right)\}\backslash]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde: 
+\end_layout
+
+\begin_layout Itemize
+ai = atividade química do cátion i; 
+\end_layout
+
+\begin_layout Itemize
+aj = atividade química do ânion j; 
+\end_layout
+
+\begin_layout Itemize
+yi = coeficiente de atividade química do cátion i;
+\end_layout
+
+\begin_layout Itemize
+yj = coeficiente de atividade química do ânion j;
+\end_layout
+
+\begin_layout Itemize
+mi = molaridade do cátion i;
+\end_layout
+
+\begin_layout Itemize
+mj = molaridade do ânion j;
+\end_layout
+
+\begin_layout Itemize
+Kpsij = produto de solubilidade do composto ij
+\end_layout
+
+\begin_layout Standard
+Cenários possíveis:
+\end_layout
+
+\begin_layout Itemize
+Supersaturada, na qual o produto das atividades dos íons precipitantes é
+ maior que o Kps e precipitação poderá ocorrer (IS>0).
+\end_layout
+
+\begin_layout Itemize
+Saturada ou em equilíbrio, na qual não haverá precipitação, embora qualquer
+ mudança no estado de equilíbrio possa acarretar a precipitação (IS=0).
+\end_layout
+
+\begin_layout Itemize
+Subsaturada na qual poderá haver dissolução e a precipitação é improvável
+ (IS<0).
+ 
 \end_layout
 
 \begin_layout Section
 Identificação de pacotes – assuntos
 \end_layout
 
-\begin_layout Standard
-...aqui...
+\begin_layout Itemize
+Pré-Processamento.
 \end_layout
 
 \begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
+Análise dos Parâmetros da Salmoura
 \end_layout
 
 \begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
+Cáculo de Potencial de Incrustação
 \end_layout
 
 \begin_layout Itemize
-Nome Pacote: Descrição.
- O que é, para que serve, como se relaciona com os demais pacotes.
+Gnuplot
+\end_layout
+
+\begin_layout Itemize
+Recomendação de Tratamento
 \end_layout
 
 \begin_layout Section
@@ -278,15 +448,11 @@ name "sec: Diagrama de pacotes – assuntos"
 \end_layout
 
 \begin_layout Standard
-...aqui...
-\end_layout
-
-\begin_layout Standard
-coloque aqui texto falando do diagrama de pacotes, referencie a figura.
- Veja Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Diagrama-de-Pacotes"
+O diagrama de pacotes fornece informações das dependências dos pacotes e
+ como eles se relacionam, Figura 
+\begin_inset CommandInset label
+LatexCommand label
+name "Ref:Diagrama-de-Pacotes"
 
 \end_inset
 
@@ -302,7 +468,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeComponentes-Assuntos-Pacotes.png
+	filename Imagens/DiagramaDePacotes.jpeg
 	lyxscale 50
 	width 100text%
 
@@ -336,19 +502,7 @@ name "fig:Diagrama-de-Pacotes"
 \end_layout
 
 \begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body

@@ -285,7 +285,7 @@ Nome
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+WSS ( Water Scale Software )
 \end_layout
 
 \end_inset
@@ -307,7 +307,8 @@ Componentes principais
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Entrada de medidas a serem calculados, ajuste dos parâmetros de cálculo
+ e leitura dos dados.
 \end_layout
 
 \end_inset
@@ -329,7 +330,7 @@ Missão
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Caracterizar o potencial de incrustação
 \end_layout
 
 \end_inset
@@ -374,17 +375,19 @@ especificação
 \end_layout
 
 \begin_layout Standard
-Apresenta-se a seguir a especificação do software.
+O projeto em questão envolve o desenvolvimento de um programa dedicado à
+ realização de cálculos de nível de incrustação com base em dados fornecidos,
+ incluindo concentrações de diversos elementos como Brometo, Estrôncio,
+ Bicarbonato, Sódio, Bário, Magnésio, entre outros sais.
+ Além disso, o programa tem a capacidade de ajustar o Ph da salmoura para
+ adequar-se às concentrações desejadas.
+ Essas informações serão fornecidas pela empresa contratante do serviço.
 \end_layout
 
 \begin_layout Standard
-....coloque aqui a especificação...
-\end_layout
-
-\begin_layout Standard
-...eventualmente coloque imagem ilustrativa geral, mostrando o que se pretente
- (primeira ideia) do software; normalmente esta figura já será mais detalhada
- que aquela apresentada no escopo...
+Na execução do software, o usuário inserirá os parâmetros necessários para
+ o cálculo do potencial, e o programa realizará a leitura e exportação dos
+ resultados em formato de gráficos e tabelas.
 \end_layout
 
 \begin_layout Section
@@ -436,7 +439,7 @@ name "subsec:Requisitos-funcionais"
 \begin_layout Standard
 Apresenta-se a seguir os requisitos funcionais
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 coloque aqueles que fazem sentido para seu sistema
@@ -469,8 +472,8 @@ RF-01
 \begin_inset Text
 
 \begin_layout Plain Layout
-O sistema deve conter uma base de dados xxx.
- O usuário deve ser capaz de xxx.
+O programa deverá ser capaz de realizar os cálculos de incrustação dados
+ proposto pelo usuário.
 \end_layout
 
 \end_inset
@@ -509,7 +512,7 @@ RF-02
 \begin_inset Text
 
 \begin_layout Plain Layout
-O usuário deverá ter liberdade para xxxx.
+Os resultados deverão ser exportados com tabelas e gráficos.
 \end_layout
 
 \end_inset
@@ -548,7 +551,7 @@ RF-03
 \begin_inset Text
 
 \begin_layout Plain Layout
-Deve permitir o carregamento de arquivos criados pelo software.
+O programa deverá realizar ajuste dos parâmetros de cálculo ( quando necessário).
 \end_layout
 
 \end_inset
@@ -556,138 +559,6 @@ Deve permitir o carregamento de arquivos criados pelo software.
 </row>
 </lyxtabular>
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="11.5cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-RF-04
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-Deve permitir a escolha da equação xxx.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="11.5cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-RF-05
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O usuário deve ter tal liberdade para escolher xxx.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="2">
-<features tabularvalignment="middle" tabularwidth="14cm">
-<column alignment="center" valignment="top">
-<column alignment="block" valignment="top" width="11.5cm">
-<row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-RF-06
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="block" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-O usuário poderá plotar seus resultados em um gráfico.
- O gráfico poderá ser salvo como imagem ou ter seus dados exportados como
- texto.
-\end_layout
-
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -736,7 +607,8 @@ RNF-01
 \begin_inset Text
 
 \begin_layout Plain Layout
-Os cálculos devem ser feitos utilizando-se xxxx.
+Os cálculos devem ser feitos utilizando-se formulações matemáticas conhecidas
+ da literatura.
 \end_layout
 
 \end_inset
@@ -805,7 +677,7 @@ Mac
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 #O que são os casos de uso
@@ -919,7 +791,7 @@ Devem ser montados diversos diagramas de caso de uso.
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 As Figuras devem ficar GRANDES; bem legíveis!! se necessário dar zoom!!
@@ -950,7 +822,7 @@ Casos de uso
 
  
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 do software
@@ -983,7 +855,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Caso de uso 1
+Casos de uso geral do sistema
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Exemplo-de-um-caso-de-uso (tabela)"
@@ -1026,7 +898,7 @@ Nome do caso de uso:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Entrada de parâmetros e leitura de resultados do WSS
 \end_layout
 
 \end_inset
@@ -1046,7 +918,8 @@ Resumo/descrição:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+O teste terá como objetivo calcular as afinidades dos sais colocados como
+ parâmetros.
 \end_layout
 
 \end_inset
@@ -1066,7 +939,33 @@ Etapas:
 \begin_inset Text
 
 \begin_layout Plain Layout
+1.
+ Inserir parâmetros de entrada;
+\end_layout
 
+\begin_layout Plain Layout
+2.
+ Ajuste dos parâmetros de medição;
+\end_layout
+
+\begin_layout Plain Layout
+3.
+ Leitura dos resultados;
+\end_layout
+
+\begin_layout Plain Layout
+4.
+ Apresentação dos resultados no formato de tabelas e gráficos;
+\end_layout
+
+\begin_layout Plain Layout
+5.
+ Inserir parâmetros da amostra;
+\end_layout
+
+\begin_layout Plain Layout
+6.
+ Cálculo do potencial de incrsutação.
 \end_layout
 
 \end_inset
@@ -1086,7 +985,8 @@ Cenários alternativos:
 \begin_inset Text
 
 \begin_layout Plain Layout
-
+Escolher uma opção diferente das listadas no programa, inserir valores negativos
+ ou incompatíveis com a ordem de grandeza do problema.
 \end_layout
 
 \end_inset
@@ -1114,35 +1014,27 @@ name "subsec: Diagrama de caso de uso geral"
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
- do software
+do software
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-....coloque aqui caso de uso geral, descrição + figura(s)...
-\end_layout
-
-\begin_layout Standard
-exemplo...
 \end_layout
 
 \begin_layout Standard
 O diagrama de caso de uso geral da Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "cap:Diagrama-caso-uso-geral"
+\begin_inset CommandInset label
+LatexCommand label
+name "Ref:Diagrama-de-caso-uso-geral"
 
 \end_inset
 
- mostra o usuário acessando os sistemas de ajuda do software, calculando
- a área de uma função ou analisando resultados.
+ mostra o usuário entrando com os parâmetros desejados, ajustando os parâmetros
+ de medição e fazendo análise de resultados.
  
 \end_layout
 
@@ -1155,11 +1047,8 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeCasoUso-Geral.png
-	lyxscale 50
+	filename Imagens/DiagramaCasoDeUsoGeral.jpeg
 	width 100text%
-	height 80theight%
-	keepAspectRatio
 
 \end_inset
 
@@ -1170,7 +1059,7 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Diagrama de caso de uso – Caso de uso geral
+Diagrama de caso de uso – Caso de uso geral 
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-caso-uso-geral"
@@ -1200,7 +1089,7 @@ name "subsec: Diagrama de caso de uso específico"
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 do software
@@ -1260,7 +1149,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeCasoDeUso-Especifico-AnaliseDosResultados.png
+	filename Imagens/DiagramaCasoDeUsoEspecifico.jpeg
 	width 100text%
 
 \end_inset
@@ -1293,19 +1182,7 @@ name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 \end_layout
 
 \begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
 
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body

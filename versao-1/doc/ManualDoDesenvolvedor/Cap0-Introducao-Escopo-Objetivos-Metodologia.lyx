@@ -146,7 +146,7 @@ status open
 
 
 \backslash
-lfoot{SeuNomeAqui} 
+lfoot{Nicolau e João} 
 \backslash
 rfoot{
 \backslash
@@ -157,7 +157,7 @@ today}
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Substitua "SeuNomeAqui" por seu nome e sobrenome
@@ -167,7 +167,7 @@ Substitua "SeuNomeAqui" por seu nome e sobrenome
 
 
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Jamais retire o 
@@ -181,20 +181,8 @@ today ele vai colocar data no material impresso
 \end_layout
 
 \begin_layout Standard
-No presente projeto de engenharia desenvolve-se o software XXXX, um software
- aplicado a engenharia de petróleo e que utiliza o paradigma da orientação
- a objetos.
-\end_layout
-
-\begin_layout Itemize
-O primeiro parágrafo da introdução pode ser um super resumo do trabalho.
- A ideia é fazer um resumo do resumo.
-\end_layout
-
-\begin_layout Itemize
-ESTE MODELO TEM TEXTOS EXPLICATVOS QUE DEVEM SER ELIMINADOS DA VERSÃO FINAL.
- O OBJETIVO DE COLOCAR AS EXPLICAÇÕES É FACILITAR O ENTENDIMENTO DO QUE
- DEVE ENTRAR EM CADA SEÇÃO.
+Neste trabalho desenvolve-se um software para calculo de potêncial de incrustaçã
+o na produção de óleo.
 \end_layout
 
 \begin_layout Section
@@ -209,13 +197,29 @@ name "sec:Escopo-do-Problema"
 \end_layout
 
 \begin_layout Standard
-Segundo o CREA/CONFEA um dos quesitos fundamentais que diferenciam a atuação
- de um tecnólogo da atuação de um engenheiro é a capacidade de desenvolver
- um projeto em engenharia; Neste trabalho, desenvolve-se um projeto em engenhari
-a de software aplicado a solução de um problema específico de engenharia
- de petróleo.
- Trabalhando-se com todo ciclo de um projeto, isto é, especificação, elaboração,
- análise, projeto, desenvolvimento, teste e documentação.
+Durante o processo de extração de petróleo, diversos desafios podem surgir,
+ afetando diretamente a qualidade do produto final.
+ Um desses desafios consiste na formação de incrustações no tubo de perfuração,
+ originadas por compostos químicos de natureza inorgânica.
+ É difícil determinar com precisão a principal causa da incrustação,  Essas
+ incrustações são constituídas por sais de baixa solubilidade em água, que,
+ ao precipitarem, se acumulam nas superfícies internas do tubo.
+ Esse acúmulo pode resultar em uma significativa redução ou até mesmo na
+ obstrução completa do fluxo de produção, ocasionando prejuízos devido à
+ inatividade do poço e aos custos adicionais de intervenção e limpeza operaciona
+l.
+ A Figura 1 ilustra uma linha de descarte de água, cujo diâmetro interno
+ foi consideravelmente reduzido devido à deposição de incrustações nas paredes
+ internas do tubo.A melhor forma de evitar que esse tipo de problema venha
+ ocorrer é aplicando produtos (Inibidores de Incrustação) ao longo do tubo
+ de perfuração.Afim de remediar a formação de precipitados e consequentemente
+ aumento a vida útil do equipamento como também aumento a produção de óleo.
+ O software idealizado tem como objetivo calcular o nível de incrustação
+ ( 1,2 ou 3) para que possa ser possível estudar um plano de ação para remediar
+ esse problema.
+ O software irá utilizar as informações da salmoura de formação ( as concentraçõ
+es de sais e ph) para entregar um resultado preliminar que posteriormente
+ será testado em laboratório para testar sua veracidade.
  
 \end_layout
 
@@ -228,7 +232,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/TubulacaoComIncrustacao.png
+	filename C:/Users/Pinguim/Desktop/Programacao/WSS/Imagens/TubulacaoIncrustacaoAgua.png
 	width 100text%
 
 \end_inset
@@ -295,56 +299,21 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Descreva aqui o objetivo geral do projeto de engenharia, incluindo vínculos
- com engenharia de petróleo e com modelagem matemática computacional (ideia
- de lógica, algoritmos,...).
+Desenvolver um projeto de engenharia de software para entrada e saída de
+ dados para calculo do potencial de incrustação na produção de petróleo
 \end_layout
 
 \begin_layout Itemize
-Desenvolver um projeto de engenharia de software para ...[.....descrever de forma
- clara, direta, objetiva, o objetivo geral do software].
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Objetivos específicos:
-\begin_inset Separator latexpar
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Modelar física e matematicamente o problema.
+Calculo do potencial de incrustação.
 \end_layout
 
 \begin_layout Itemize
-Modelagem estática do software (diagramas de caso de uso, de pacotes, de
- classes).
+Saída de classificação do nível de incrustação
 \end_layout
 
 \begin_layout Itemize
-Modelagem dinâmica do software (desenvolver algoritmos e diagramas exemplificand
-o os fluxos de processamento).
-\end_layout
-
-\begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
-\end_layout
-
-\begin_layout Itemize
-Calcular XXX[.....descrever de forma clara, direta, objetiva, cada objetivo específic
-o, cada parte do software].
-\end_layout
-
-\begin_layout Itemize
-Simular (realizar simulações para teste do software desenvolvido).
-\end_layout
-
-\begin_layout Itemize
-Implementar manual simplificado de uso do software.
+Otimização na escolha de qual produto usar para o tratamento em questão
+ 
 \end_layout
 
 \end_deeper
@@ -370,86 +339,10 @@ Metodologia utilizada
 \end_layout
 
 \begin_layout Standard
-O software a ser desenvolvido utiliza a metodologia de engenharia de software
- apresentada pelo Prof.
- André Bueno na disciplina de programação e ilustrado na Figura 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Etapas para o desenvolvimento do software"
-
-\end_inset
-
-.
- Note que o 
-\begin_inset Quotes eld
-\end_inset
-
-Ciclo de Concepção e Análise
-\begin_inset Quotes erd
-\end_inset
-
- é composto por diversas partes representadas neste trabalho em diferentes
- capítulos.
- Os ciclos de planejamento/detalhamento tem seu próprio capítulo, assim
- como o ciclo de construção - implementação.
-\end_layout
-
-\begin_layout Standard
-Esta metodologia é utilizada nas disciplinas:
-\end_layout
-
-\begin_layout Itemize
-LEP01447 : Programação Orientada a Objeto em C++.
-\end_layout
-
-\begin_layout Itemize
-LEP01446 : Programação Prática.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename imagens/EngenhariaSoftware-Geral.png
-	lyxscale 25
-	width 100text%
-	height 85theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Etapas para o desenvolvimento do software
-\shape italic
- - projeto de engenharia
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Etapas para o desenvolvimento do software"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+O software a ser desenvolvido utiliza a metodologia de leitura de dados
+ em laboratório, realizando cálculos relacionados ao índice de saturação
+ de determinada salmoura, podendo então determinar o potencial de incrustação
+ da mesma.
 \end_layout
 
 \end_body
