@@ -270,7 +270,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagens/TabelaDeSais.png
+	filename imagens/TabelaDeSais.png
 	lyxscale 50
 	width 100text%
 
@@ -468,7 +468,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagens/DiagramaDePacotes.jpeg
+	filename imagens/DiagramaDePacotes.jpeg
 	lyxscale 50
 	width 100text%
 
@@ -498,10 +498,6 @@ name "fig:Diagrama-de-Pacotes"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Description
 
 \end_layout
 

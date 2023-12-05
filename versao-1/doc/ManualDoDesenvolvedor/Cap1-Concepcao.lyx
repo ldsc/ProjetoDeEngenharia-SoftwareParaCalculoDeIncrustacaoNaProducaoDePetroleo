@@ -1047,7 +1047,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagens/DiagramaCasoDeUsoGeral.jpeg
+	filename imagens/DiagramaCasoDeUsoGeral.jpeg
 	width 100text%
 
 \end_inset
@@ -1149,7 +1149,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagens/DiagramaCasoDeUsoEspecifico.jpeg
+	filename imagens/DiagramaCasoDeUsoEspecifico.jpeg
 	width 100text%
 
 \end_inset
@@ -1178,10 +1178,6 @@ name "cap:Diagrama-de-caso-de-uso-especifico:Titulo"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Description
 
 \end_layout
 

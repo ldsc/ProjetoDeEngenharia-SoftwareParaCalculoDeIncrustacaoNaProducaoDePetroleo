@@ -187,7 +187,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagens/DiagramaDeClasses.jpeg
+	filename imagens/DiagramaDeClasses.jpeg
 	lyxscale 50
 	width 100text%
 
@@ -347,7 +347,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagens/DiagramaDeSequencia.PNG
+	filename imagens/DiagramaDeSequencia.PNG
 	lyxscale 50
 	width 100text%
 
@@ -478,6 +478,10 @@ No diagrama de comunicação o foco é a interação e a troca de mensagens e
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Veja na Figura 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -489,7 +493,7 @@ reference "subsec:Diagrama-de-Comunicação"
  Observe que ....
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Float figure
 placement H
 wide false
@@ -499,7 +503,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/Pinguim/Pictures/Screenshots/asd
+	filename imagens/asd
 	lyxscale 85
 	width 100text%
 
@@ -516,6 +520,11 @@ Diagrama de comunicação
 \begin_inset CommandInset label
 LatexCommand label
 name "cap:Diagrama-de-comunicação"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -585,7 +594,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagens/DiagramaMaquinaDeEstadoCAmostra.PNG
+	filename imagens/DiagramaMaquinaDeEstadoCAmostra.PNG
 	lyxscale 85
 	width 100text%
 
@@ -651,7 +660,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename Imagens/DiagramaDeAtividade.PNG
+	filename imagens/DiagramaDeAtividade.PNG
 	lyxscale 150
 	width 100text%
 
