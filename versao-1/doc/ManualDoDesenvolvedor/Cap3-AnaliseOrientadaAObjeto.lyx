@@ -187,7 +187,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeClasses.jpeg
+	filename Imagens Corrigidas pelo Bueno/DiagramaDeClasses.jpeg
 	lyxscale 50
 	width 100text%
 
@@ -232,37 +232,40 @@ name "subsec:Dicionário-de-classes"
 \end_layout
 
 \begin_layout Itemize
-Classe CSimuladorIncrustação: representa uma classe com os parâmetros ,necessári
-os para que possa ser efetuado o cálculo do potencial de incrustação da
- produção.
+Classe CSimuladorIncrustacao: representa uma classe que será responsavel
+ pelo software que irá fazer o processamento dos dados.
+ 
 \end_layout
 
 \begin_layout Itemize
-Classe CAmostraDeFluido: representa uma classe para solicitar informações
- sobre as concentrações da salmoura estuda em questão.
+Classe CAmostra: representa uma classe que terá as identificaçoes da amostra.
 \end_layout
 
 \begin_layout Itemize
-Classe CAmostra: representa uma amostra computadorizada de rocha em que
- serão analisadas as concentrações da salmoura.E onde será informada as informaçõ
-es para criação dessa amostra( ID,Quem Preparou, Descrição) e também os
- parâmetros analisados ( pH, Temperatura e Pressão)
-\end_layout
-
-\begin_layout Itemize
-Classe CCalculo_Incrustação: Realiza os cálculos matemáticos necessários
- para determinar a incrustação das amostras baseado nas composições e interações
- entre os sais.
-\end_layout
-
-\begin_layout Itemize
-Classe CQuimicaOganica: Informa as interações e as afinidades químicas dos
- Anios e Cations presente na salmoura.
+Classe CAmostraSalmoura: representa uma classe onde será setada as informaçoes
+ necessárias para efetuar o teste.
 \end_layout
 
 \begin_layout Itemize
 Classe CGnuplot: representa uma classe para criação e geração de gráficos.
  Apresenta as proriedades para criação de diferentes tipos de gráficos.
+\end_layout
+
+\begin_layout Itemize
+Classe CSal: representa uma classe que terá as informaçoes informantes para
+ que a classe CsimuladorInscrustacao possa efetuar os calculos de afinidades
+ entre os sais.
+\end_layout
+
+\begin_layout Itemize
+Classe CAmostraSal: representa uma classe que terá as caracteristicas da
+ amostra estudada em questão.
+ 
+\end_layout
+
+\begin_layout Itemize
+Enum: representa uma lista onde ficará armazenados os tipos de sias que
+ podem ser usados nos testes.
 \end_layout
 
 \begin_layout Section
@@ -347,7 +350,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeSequencia.PNG
+	filename Imagens Corrigidas pelo Bueno/DiagramaDeSequencia.jpeg
 	lyxscale 50
 	width 100text%
 
@@ -388,33 +391,6 @@ deve mostrar uma sequência geral
 \end_inset
 
 
-\end_layout
-
-\begin_layout Subsection
-
-\shape italic
-\emph on
-Diagrama de sequência específico
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec: Diagrama de sequência específico"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-...
-\end_layout
-
-\begin_layout Itemize
-[deve mostrar uma sequência específica; NÃO É PARA REPETIR O GERAL COM 1-2
- coisas diferentes!
-\end_layout
-
-\begin_layout Standard
-é um novo diagrama; detalhando algo! ]
 \end_layout
 
 \begin_layout Section
@@ -466,20 +442,12 @@ name "par:Diagrama-de-colaboração:"
 \end_layout
 
 \begin_layout Standard
-No diagrama de comunicação o foco é a interação e a troca de mensagens e
- dados entre os objetos.
- 
-\end_layout
-
-\begin_layout Itemize
-[Pode ser a repetição de um diagrama de sequência; mas note que o formato
- do gráfico é diferente, aqui a ênfase é o entendimento das mensagens que
- chegam e saem de cada objeto.]
+Veja o Diagrama de Comunicação
 \end_layout
 
 \begin_layout Standard
 \begin_inset Note Note
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Veja na Figura 
@@ -525,6 +493,49 @@ name "cap:Diagrama-de-comunicação"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Imagens Corrigidas pelo Bueno/DiagramaDeComunicacao.png
+	lyxscale 85
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Comunicação
+\begin_inset CommandInset label
+LatexCommand label
+name "cap:Diagrama-de-maquina-de-comunicacao"
 
 \end_inset
 
@@ -594,7 +605,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaMaquinaDeEstadoCAmostra.PNG
+	filename Imagens Corrigidas pelo Bueno/DiagramaDeMaquinaDeEstado.jpeg
 	lyxscale 85
 	width 100text%
 
@@ -660,7 +671,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDeAtividade.PNG
+	filename Imagens Corrigidas pelo Bueno/DiagramaDeAtividade.PNG
 	lyxscale 150
 	width 100text%
 
@@ -691,22 +702,6 @@ name "cap:Diagrama-de-atividades"
 \end_inset
 
 
-\end_layout
-
-\begin_layout Description
-Nota: 
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-Não perca de vista a visão do todo; do projeto de engenharia como um todo.
- Cada capítulo, cada seção, cada parágrafo deve se encaixar.
- Este é um diferencial fundamental do engenheiro em relação ao técnico,
- a capacidade de desenvolver projetos, de ver o todo e suas diferentes partes,
- de modelar processos/sistemas/produtos de engenharia.
 \end_layout
 
 \end_body

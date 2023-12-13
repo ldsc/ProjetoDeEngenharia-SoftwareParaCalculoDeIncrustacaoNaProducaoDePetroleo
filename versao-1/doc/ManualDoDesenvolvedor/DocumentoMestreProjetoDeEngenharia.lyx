@@ -331,17 +331,6 @@ filename "Cap3-AnaliseOrientadaAObjeto.lyx"
 \end_layout
 
 \begin_layout Standard
-\align block
-\begin_inset CommandInset include
-LatexCommand include
-filename "Cap4-Projeto.lyx"
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 \noindent
 \align block
 \begin_inset ERT

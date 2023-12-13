@@ -270,7 +270,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/TabelaDeSais.png
+	filename Imagens Atualizadas/TabelaDeSais.png
 	lyxscale 50
 	width 100text%
 
@@ -347,14 +347,22 @@ Ca²⁺(aq) + 2HCO₃⁻ - (aq) CaCO₃(s) + H2O(l) + CO₂(aq)
 
 \begin_layout Standard
 Para o cálculo da saturação, temos: 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\backslash[IS=\backslash frac\{\backslash log\_\{10\}\backslash left(\backslash frac\{ai\_v+\}\{aj\_v-\}\backslash right)\}\{\backslash log\_\{10\}\backslash left(\backslash frac\{\backslash left[mi\backslash right]vi+\backslash left[mj\backslash right]v-\}\{yi\_v+yj\_v-\}\backslash right)\}\backslash]
+IS=log_{10}\frac{(a_{i}^{^{v+}})(a_{j}^{^{v-}})}{Kpsi_{ij}}=Log_{10}\frac{([m_{j}]^{^{v+}}[m_{j}]^{^{v-}})(y_{i}^{^{v+}}y_{j}^{^{v-}})}{Kpsi_{ij}}
 \]
 
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -365,31 +373,59 @@ onde:
 \end_layout
 
 \begin_layout Itemize
-ai = atividade química do cátion i; 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ = atividade química do cátion i; 
 \end_layout
 
 \begin_layout Itemize
-aj = atividade química do ânion j; 
+\begin_inset Formula $a_{j}$
+\end_inset
+
+ = atividade química do ânion j; 
 \end_layout
 
 \begin_layout Itemize
-yi = coeficiente de atividade química do cátion i;
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ = coeficiente de atividade química do cátion i;
 \end_layout
 
 \begin_layout Itemize
-yj = coeficiente de atividade química do ânion j;
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ = coeficiente de atividade química do ânion j;
 \end_layout
 
 \begin_layout Itemize
-mi = molaridade do cátion i;
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ = molaridade do cátion i;
 \end_layout
 
 \begin_layout Itemize
-mj = molaridade do ânion j;
+\begin_inset Formula $m_{j}$
+\end_inset
+
+ = molaridade do ânion j;
 \end_layout
 
 \begin_layout Itemize
-Kpsij = produto de solubilidade do composto ij
+\begin_inset Formula $Kps_{ij}$
+\end_inset
+
+ = produto de solubilidade do composto ij
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\ce{(v^{^{+}})I+(v^{^{-}})J \rightleftharpoons I_{(v+)}+J_{(v-)}}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -468,7 +504,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename imagens/DiagramaDePacotes.jpeg
+	filename Imagens Corrigidas pelo Bueno/DiagramaDePacotes.jpeg
 	lyxscale 50
 	width 100text%
 
