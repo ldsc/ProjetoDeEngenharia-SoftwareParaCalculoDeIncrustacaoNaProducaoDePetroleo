@@ -96,11 +96,12 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -198,22 +199,101 @@ name "sec:Escopo-do-Problema"
 
 \begin_layout Standard
 Durante o processo de extração de petróleo, diversos desafios podem surgir,
+ afetando diretamente a qualidade do produto final
+\change_inserted 1635264300 1702559044
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559049
+A frade
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559051
+Durante o processo de extração de petróleo, diversos desafios podem surgir,
  afetando diretamente a qualidade do produto final.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559091
+é excessivamente genérica e abstrata...
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559113
+além de ser inexata; muitos desafios podem aparecer e não afetar em nada
+ a qualidade do produto final...
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
  Um desses desafios consiste na formação de incrustações no tubo de perfuração,
  originadas por compostos químicos de natureza inorgânica.
- É difícil determinar com precisão a principal causa da incrustação,  Essas
- incrustações são constituídas por sais de baixa solubilidade em água, que,
- ao precipitarem, se acumulam nas superfícies internas do tubo.
+ É difícil determinar com precisão a principal causa da incrustação
+\change_deleted 1635264300 1702559137
+,
+\change_inserted 1635264300 1702559140
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559168
+virgula seguida de letra maiúscula? nenhum cuidado com a grafia
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+  Essas incrustações são constituídas por sais de baixa solubilidade em
+ água, que, ao precipitarem, se acumulam nas superfícies internas do tubo.
  Esse acúmulo pode resultar em uma significativa redução ou até mesmo na
  obstrução completa do fluxo de produção, ocasionando prejuízos devido à
  inatividade do poço e aos custos adicionais de intervenção e limpeza operaciona
 l.
- A Figura 1 ilustra uma linha de descarte de água, cujo diâmetro interno
- foi consideravelmente reduzido devido à deposição de incrustações nas paredes
- internas do tubo.A melhor forma de evitar que esse tipo de problema venha
- ocorrer é aplicando produtos (Inibidores de Incrustação) ao longo do tubo
- de perfuração.Afim de remediar a formação de precipitados e consequentemente
- aumento a vida útil do equipamento como também aumento a produção de óleo.
+ A Figura 
+\change_deleted 1635264300 1702559192
+1
+\change_inserted 1635264300 1702559192
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559225
+1 mostrei em sala de aula como incluir nas figuras um label e como fazer
+ referência cruzada.
+ Não é para citar numerando, use o recurso de referencia cruzada
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ ilustra uma linha de descarte de água, cujo diâmetro interno foi consideravelme
+nte reduzido devido à deposição de incrustações nas paredes internas do
+ tubo.A melhor forma de evitar que esse tipo de problema venha ocorrer é
+ aplicando produtos (Inibidores de Incrustação) ao longo do tubo de perfuração.Af
+im de remediar a formação de precipitados e consequentemente aumento a vida
+ útil do equipamento como também aumento a produção de óleo.
  O software idealizado tem como objetivo calcular o nível de incrustação
  ( 1,2 ou 3) para que possa ser possível estudar um plano de ação para remediar
  esse problema.
@@ -231,6 +311,31 @@ status open
 
 \begin_layout Plain Layout
 \align center
+
+\change_inserted 1635264300 1702559243
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559258
+A Figura não aprrece porque não foi colocada no diretório de imagens do
+ manual
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559262
+Imagens Corrigidas pelo Bueno/TubulacaoIncrustacaoAgua.png ?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \begin_inset Graphics
 	filename Imagens Corrigidas pelo Bueno/TubulacaoIncrustacaoAgua.png
 	width 100text%
@@ -299,21 +404,61 @@ Objetivo geral:
 
 \begin_deeper
 \begin_layout Itemize
-Desenvolver um projeto de engenharia de software para entrada e saída de
- dados para calculo do potencial de incrustação na produção de petróleo
+Desenvolver um 
+\change_deleted 1635264300 1702558891
+projeto de engenharia de 
+\change_inserted 1635264300 1702558891
+ 
+\change_unchanged
+software para 
+\change_deleted 1635264300 1702558895
+entrada e saída de dados para 
+\change_inserted 1635264300 1702558895
+ 
+\change_unchanged
+c
+\change_deleted 1635264300 1702558898
+a
+\change_inserted 1635264300 1702558898
+á
+\change_unchanged
+lculo do potencial de incrustação 
+\change_inserted 1635264300 1702558916
+DO QUE? AONDE? 
+\change_deleted 1635264300 1702558923
+na produção de petróleo
+\change_inserted 1635264300 1702558929
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
-Calculo do potencial de incrustação.
+C
+\change_deleted 1635264300 1702558883
+a
+\change_inserted 1635264300 1702558883
+á
+\change_unchanged
+lculo do potencial de incrustação.
 \end_layout
 
 \begin_layout Itemize
 Saída de classificação do nível de incrustação
+\change_inserted 1635264300 1702558877
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Otimização na escolha de qual produto usar para o tratamento em questão
+\change_deleted 1635264300 1702558879
  
+\change_inserted 1635264300 1702558877
+.
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -343,6 +488,30 @@ O software a ser desenvolvido utiliza a metodologia de leitura de dados
  em laboratório, realizando cálculos relacionados ao índice de saturação
  de determinada salmoura, podendo então determinar o potencial de incrustação
  da mesma.
+\change_inserted 1635264300 1702558963
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702558995
+Descrevam a metodologia de forma completa; isto vai esclarecer muita coisa,
+ eliminar confusões que estão fazendo.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559013
+Precisa descrever claramente a parte experimental e a parte associada ao
+ simulador que vai ser desenvolvido.
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_body

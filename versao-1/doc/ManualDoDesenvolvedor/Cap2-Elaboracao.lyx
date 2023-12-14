@@ -97,11 +97,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -148,8 +149,39 @@ name "sec:Elaboração"
 \end_layout
 
 \begin_layout Standard
-Neste capítulo será apresentada a elaboração do programa desenvolvido WSS,
- que, no caso, foi feita através de pesquisas bibliográficas.
+Neste capítulo será apresentada a elaboração do programa 
+\change_deleted 1635264300 1702560105
+desenvolvido
+\change_inserted 1635264300 1702560105
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560114
+desenvolvido?
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560120
+já esta pronto?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ WSS
+\change_deleted 1635264300 1702560131
+, que, no caso, foi feita através de pesquisas bibliográficas.
+\change_inserted 1635264300 1702560131
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -166,10 +198,47 @@ name "sec:Análise-de-domínio"
 \begin_layout Standard
 O desenvolvimento deste software está focado na área de produção do óleo,
  onde o objetivo é extrair petróleo de reservatórios.
+\change_inserted 1635264300 1702560166
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560200
+Vinculado a indústria/área de petróleo, engenharia de produção de petróleo,
+ dano de formação, incrustação.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
  Para atingir esse objetivo, são analisadas informações sobre a composição
  da salmoura, à semelhança dos corpos d’água onde ocorre a produção de petróleo.
  Isso inclui concentrações de certos sais, como brometo, estrôncio, bicarbonato,
- sódio, bário e magnésio.E análise do ph.
+ sódio, bário e magnésio.
+
+\change_inserted 1635264300 1702560081
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560091
+corrigir português
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+E análise do ph.
 \end_layout
 
 \begin_layout Standard
@@ -178,6 +247,43 @@ A compreensão dessas concentrações nos permite criar um software que pode
  Esta análise permite desenvolver um plano de ação para abordar potenciais
  questões relacionadas à escala.
  
+\change_inserted 1635264300 1702560239
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560246
+reescrever toda esta seção;
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560291
+Na análise de domínio colocamos as áreas relacionadas ao problema.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560306
+Os assuntos relacionados ao problema que vai ser resolvido.
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560328
+O objetivo é identificar o que iremos precisar saber/dominar para poder
+ desenvolver a solução.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -217,16 +323,89 @@ Cálculo termodinâmico: Use um modelo termodinâmico (por exemplo, diagrama
  de estabilidade de fase) para calcular a saturação de água associada a
  estes sais.
  Esses cálculos envolvem a avaliação de parâmetros como temperatura, pressão
- e pH para determinar as condições sob as quais o sal tem maior probabilidade
+ e pH
+\change_inserted 1635264300 1702560389
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560429
+não coloque propriedades/atributos de forma isolada, associe o mesmo ao
+ conceito/classe do qual se originam/pertencem
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ para determinar as condições sob as quais o sal tem maior probabilidade
  de precipitar.
 \end_layout
 
 \begin_layout Enumerate
-Índice de Saturação (SI): Calcule o índice de saturação (SI) para cada sal.
- IS compara a concentração real de sal na água com a concentração necessária
+Índice de Saturação (SI): Calcule o índice de saturação (SI) para cada sal
+\change_inserted 1635264300 1702560437
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560448
+aqui esta correto, fala da propriedade e vincula ao objeto sal
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+.
+ IS
+\change_inserted 1635264300 1702560460
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560463
+o que é IS?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ compara a concentração real de sal na água com a concentração necessária
  para a saturação.
  Se IS for maior que 1, indica a presença de supersaturação e indica o potencial
  de incrustação.
+\change_inserted 1635264300 1702560492
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560496
+é SI ou IS?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Enumerate
@@ -309,6 +488,24 @@ Os tipos mais comuns de incrustação são as seguintes reações:
 
 \begin_layout Enumerate
 Ba²⁺(aq) + SO₄²⁻ -> (aq) BaSO₄(s) 
+\change_inserted 1635264300 1702560525
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560536
+Use equações numeradas; mostramos em sala como fazer
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Enumerate
@@ -323,7 +520,25 @@ Ca²⁺(aq) + SO4²⁻ (aq) -> CaSO₄(s)
 Note que são as mais comuns, mas não os únicos tipos.
  Podemos ter reações de sulfeto de ferro, zinco e chumbo, mas são menos
  frequentes.
- E incrustações radioativas, com rádio, chumbo e polônio, estas sendo ainda
+ 
+\change_inserted 1635264300 1702560558
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560563
+corrigir o português
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+E incrustações radioativas, com rádio, chumbo e polônio, estas sendo ainda
  menos frequentes.
 \end_layout
 
@@ -337,8 +552,28 @@ Para entendermos o problema, precisamos entender que os reservatórios de
  deslocado para os outros fluidos, óleo e gás.
  Assim o pH da solução aquosa aumenta, e a solubilidade, com relação ao
  carbonato diminui rapidamente, levando à precipitação do carbonato com
- íons divalentes, mais comumente o cálcio (CaCO₃), segundo a reação abaixo:
- 
+ íons divalentes, mais comumente o cálcio (CaCO₃), segundo a reação 
+\change_deleted 1635264300 1702560615
+abaixo
+\change_inserted 1635264300 1702560616
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560643
+coloque equações numeradas, coloque label nas equações, use referencia cruzada;
+ não use abaixo/acima...
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+: 
 \end_layout
 
 \begin_layout Standard
@@ -377,6 +612,24 @@ onde:
 \end_inset
 
  = atividade química do cátion i; 
+\change_inserted 1635264300 1702560654
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560661
+coloque as unidades dentro de []
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
@@ -434,7 +687,37 @@ Cenários possíveis:
 
 \begin_layout Itemize
 Supersaturada, na qual o produto das atividades dos íons precipitantes é
- maior que o Kps e precipitação poderá ocorrer (IS>0).
+ maior que o 
+\change_deleted 1635264300 1702560674
+Kps
+\change_inserted 1635264300 1702560674
+
+\begin_inset Formula $Kps$
+\end_inset
+
+
+\change_unchanged
+ 
+\change_inserted 1635264300 1702560682
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560745
+na descrição no meio do texto use equação embutida (isto garante a mesma
+ grafia final - fontes); selecione e pressione ctrl+m para transformar em
+ equação
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+e precipitação poderá ocorrer (IS>0).
 \end_layout
 
 \begin_layout Itemize
@@ -454,22 +737,57 @@ Identificação de pacotes – assuntos
 
 \begin_layout Itemize
 Pré-Processamento.
+\change_inserted 1635264300 1702560756
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560789
+Não usem letrar maiúsculas indiscriminadamente; são usadas em nomes, siglas,
+ títulos, descrição de abreviaturas.
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Análise dos Parâmetros da Salmoura
+\change_inserted 1635264300 1702560751
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Cáculo de Potencial de Incrustação
+\change_inserted 1635264300 1702560751
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Gnuplot
+\change_inserted 1635264300 1702560752
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Itemize
 Recomendação de Tratamento
+\change_inserted 1635264300 1702560753
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Section
@@ -510,6 +828,24 @@ status open
 
 \end_inset
 
+
+\change_inserted 1635264300 1702560801
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702560807
+os diagramas não estou vendo;
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
 
 \end_layout
 

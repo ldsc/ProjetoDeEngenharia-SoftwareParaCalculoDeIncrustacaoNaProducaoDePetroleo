@@ -97,11 +97,12 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle fancy
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\author 1635264300 "andreduartebueno" andreduartebueno@gmail.com
 \end_header
 
 \begin_body
@@ -285,7 +286,29 @@ Nome
 \begin_inset Text
 
 \begin_layout Plain Layout
-WSS ( Water Scale Software )
+WSS ( 
+\emph on
+Water Scale Software 
+\change_inserted 1635264300 1702559296
+
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559304
+itens em inglês em itálico
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+)
 \end_layout
 
 \end_inset
@@ -307,8 +330,73 @@ Componentes principais
 \begin_inset Text
 
 \begin_layout Plain Layout
-Entrada de medidas a serem calculados, ajuste dos parâmetros de cálculo
+Entrada de medidas a serem calculados
+\change_inserted 1635264300 1702559373
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559380
+"Entrada de medidas a serem calculados"
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559401
+se vão ser fornecidas não são calculadas?
+\end_layout
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559421
+Outra coisa, se são medidas (feminino), são calculadas (e não calculados).
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, ajuste dos parâmetros de cálculo
+\change_inserted 1635264300 1702559440
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559446
+ajuste dos parâmetros dos modelos?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
  e leitura dos dados.
+\change_inserted 1635264300 1702559456
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559461
+REFAZER!
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -382,12 +470,65 @@ O projeto em questão envolve o desenvolvimento de um programa dedicado à
  Além disso, o programa tem a capacidade de ajustar o Ph da salmoura para
  adequar-se às concentrações desejadas.
  Essas informações serão fornecidas pela empresa contratante do serviço.
+\change_inserted 1635264300 1702559483
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559486
+qual empresa
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
-Na execução do software, o usuário inserirá os parâmetros necessários para
- o cálculo do potencial, e o programa realizará a leitura e exportação dos
- resultados em formato de gráficos e tabelas.
+Na execução do software, o usuário inserirá os parâmetros necessários
+\change_inserted 1635264300 1702559501
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559503
+quais?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+ para o cálculo do potencial
+\change_inserted 1635264300 1702559506
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559508
+do que?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+, e o programa realizará a leitura e exportação dos resultados em formato
+ de gráficos e tabelas.
 \end_layout
 
 \begin_layout Section
@@ -474,6 +615,24 @@ RF-01
 \begin_layout Plain Layout
 O programa deverá ser capaz de realizar os cálculos de incrustação dados
  proposto pelo usuário.
+\change_inserted 1635264300 1702559544
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559547
+reescrever
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -512,7 +671,11 @@ RF-02
 \begin_inset Text
 
 \begin_layout Plain Layout
-Os resultados deverão ser exportados com tabelas e gráficos.
+Os resultados deverão ser exportados com
+\change_inserted 1635264300 1702559560
+o
+\change_unchanged
+ tabelas e gráficos.
 \end_layout
 
 \end_inset
@@ -609,6 +772,24 @@ RNF-01
 \begin_layout Plain Layout
 Os cálculos devem ser feitos utilizando-se formulações matemáticas conhecidas
  da literatura.
+\change_inserted 1635264300 1702559573
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559594
+lembrem de colocar na elaboração as equações e referências bibliográficas
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -842,6 +1023,27 @@ reference "cap:Exemplo-de-um-caso-de-uso (tabela)"
 \end_inset
 
  mostra a descrição de um caso de uso.
+\change_inserted 1635264300 1702559650
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559700
+Vocês já me apresentaram o projeto, já li o texto mais de uma vez, e ainda
+ não entendi o que de fato pretendem fazer, isto ocorre porque o texto esta
+ bem ruim, truncado, confuso.
+ 
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -941,11 +1143,45 @@ Etapas:
 \begin_layout Plain Layout
 1.
  Inserir parâmetros de entrada;
+\change_inserted 1635264300 1702559619
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559621
+quais?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Plain Layout
 2.
  Ajuste dos parâmetros de medição;
+\change_inserted 1635264300 1702559632
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559632
+quais?
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1036,6 +1272,24 @@ name "Ref:Diagrama-de-caso-uso-geral"
  mostra o usuário entrando com os parâmetros desejados, ajustando os parâmetros
  de medição e fazendo análise de resultados.
  
+\change_inserted 1635264300 1702559719
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559734
+note como sempre falam no genérico, não existem dados concretos!
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
@@ -1101,7 +1355,27 @@ do software
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted 1635264300 1702559750
 ....coloque aqui casos de uso específicos, descrição + figura(s)...
+\change_inserted 1635264300 1702559753
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted 1635264300 1702559758
+Não corrigiram !
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard

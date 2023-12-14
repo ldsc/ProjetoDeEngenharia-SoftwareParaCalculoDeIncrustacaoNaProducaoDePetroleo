@@ -1,0 +1,141 @@
+Muitos erros ainda!
+
+MODELAGEM UML
+=============
+
+1) Nomes atributos
+Todos os exercícios apresentados, todos os projetos, todas as provas mostram um padrão simples.
+Nome dos métodos com letras minúsculas, ex: gnuplot.
+Vocês colocaram vários atributos em letra maiúscula,
+ex: GerarGrafico, CalculoIncrustacao, Descricao, etc.
+
+Os nomes são bem ruins!
+ex: GerarGrafico não é um nome válido para um atributo.
+ex: CalculoIncrustacao não é um nome válido para um atributo.
+
+O padrão passado não foi respeitado e criaram nomes que criam muita confusão desnecessária.
+GerarGrafico é nome de uma ação...
+
+Nomes não podem ter espaços e acentos!
+Descrição não é um nome válido.
+
+2) Nomes métodos
+- Não existe algo como GetGerarTabela()!
+- O padrão passado é:
+int nomeAtributo = valor;
+void NomeAtributo(int novoValor) { nomeAtributo = novoValor; }
+int NomeAtributo() { return nomeAtributo ; }
+Não é para usar Get/Set explicitamente, pois tem de digitar mais desnecessariamente.
+- Vários nomes de métodos ruins.
+- Vários métodos sem definição de tipo de retorno!
+
+3) Diversos erros na modelagem das classes
+
+Classe CAmostra:
+- tem getPH() mas não tem abributo associado.
+- Os métodos Set, usados para definir o valor de um atributo não tem retorno, retornam void em C++. Mas estão com retornos.
+- se são 3 atributos: id, nomeTecnicoResponsavel e descricao, teremos 3 métodos para retornar estes atributos e 3 para definir. Não foram colocados e os que foram estão com erros.
+-
+
+Classe CAmostraSalmoura
+- trocar Presao por pressao, Temperatura por temperatura.
+- criar os métodos para definição e retorno usando o padrão.
+- O método CCalculo() não faz nenhum sentido. Usamos "C" para indicar uma classe. Calculo é algo que não faz sentido.
+- O método CAjuste não faz nenhum sentido, não começa com C, Ajuste é muito genérico.
+
+Classe CSal
+- os nomes dos atributos devem começar com minúsculas.
+- retirar Get/Set dos nomes dos métodos.
+- os atributos, com exceção de tipoSal, são todos strings, é isso mesmo?
+A classe CSal não tem atributos numéricos?
+- Faltam os métodos para definir e retornar os atributos.
+
+Classe CAmostraSal
+- não tem métodos! atributos privados.
+- Não poderão ser acessados de nenhuma forma.
+- Corrigir.
+
+Classe CSimuladorIncrustacao
+- atributo CalculoIncrustacao não existe.
+- atributo GerarGrafico não existe, nomes indicam ação e não propriedade!
+- método GetGerarTabela não existe, nomes bem ruins.
+- métodos estão com retorno undef, tem de corrigir.
+- falta no simulador métodos de gestão da simulação, por exemplo, faltam menus, faltam métodos de execução associados aos cenários definidos no projeto e/ou genéricos.
+
+4) O diagrama de sequência esta com sequências numeradas, sendo que em sala de aula mostrei que usamos os métodos declarados nas classes para acessar os mesmos, funcionamento como mecanismo de teste e sincronização das informações do diagrama de classe com o diagrama de sequência.
+Mostrei que se um método não existe podemos criar o mesmo diretamente a partir do diálogo "Selecionar Operação", basta clicar no botão "Nova operação..".
+
+No diagrama de sequência tem um objeto CAMostra
+ele tem uma chamada de método "Concentração de Sais()", vários erros aqui.
+O nome do método é inválido.
+Este método não faz parte da classe CAmostra.
+Temperatura() e Pressão() não são métodos da classe CAmostra.
+O objeto CAmostra esta solto, não se relaciona com os demais!
+
+A chamada 4: "Conexão com computador" não faz sentido.
+
+Enfim, muitos erros para corrigir.
+
+
+5) O diagrama de máquina de estado da classe CAmostra apresenta vários erros.
+Inclui estado "Inserir Parâmetros(Pressão, temperatura..)" que não são atributos da classe!
+Tem tomada de decisão não apresentada.
+Medir pH, Ajustar pH, Calcular Afinidade, não são estados.
+
+Apresentamos em sala vários exemplos de estados e diagrama de máquina de estado.
+Água pode estar nos estados sólido/líquido/gasoso.
+Janela pode estar aberta/fechada.
+Mostramos softwares rodando com itens em cinza, ou seja, inativos para aquele estado em que se encontra.
+O que podemos fazer com um objeto depende do estado do mesmo e os diagramas de máquina de estado ilustram isso.
+Os estados do objeto.
+
+Não são como os diagramas de atividades, estes apresentam um tipo de fluxograma para um método específico da classe.
+
+Alguns itens visuais estão presentes nos dois diagramas, mas suas origens conceituais e aplicações são bem diferentes.
+
+No seu diagrama de máquina de estado da classe CAmostra fica clara a confusão com diagrama de atividades.
+E a repetição dos itens presentes no cenário apresentado no diagrama de caso de uso.
+Um erro comum que comento várias vezes em sala de aula, e peço para não fazerem.
+
+6) Como padrão de engenharia os diagramas devem ter, no canto inferior direito, uma nota com nome do projeto, nome dos engenheiros, nome do diagrama. Isto facilita o tratamento dos projetos e evita a mistura de dados com outros projetos. Se um gráfico for inserido de forma errada em outro projeto esta nota vai deixar isso evidente.
+
+7) O diagrama de caso de uso continua com erros.
+Não existe um caso de uso "acessar software". os casos de uso mostram o uso do software.
+Selecionar parâmetros e importar parâmetros são genéricos demais, vale para qualquer software!
+Não existe um boneco "software", o software deve dar respostas aos textos dentro dos balões.
+O diagrama de caso de uso é posteriormente convertido em diagramas de sequência e/ou comunicação, ilustrando o que ocorre dentro do software, como os objetos interagem entre sí.
+
+8) O diagrama de componentes esta errado.
+Não existe componente pré-processamento (nome super genérico);
+Não existe componente Calculo do potencial de incrustação, um componente não é um cálculo!
+Não existe componente Anaálise, um componente não é uma análise.
+
+Enfim, os diagramas estão recheados de erros conceituais, lógicos, de texto, não se encaixam.
+
+
+Manual do Desenvolvedor
+==========================
+1) Documentos fazem inclusão de imagens do diretório "Imagens Corrigidas pelo Bueno",
+ex: "Imagens Corrigidas pelo Bueno/TubulacaoIncrustacaoAgua.png"
+Diretório este que não existe no projeto.
+
+É passado um modelo, com Ajuda que explica onde estão as coisas, mas isto aparentemente não foi lido.
+E os arquivos novos não foram adicionados no github, não sendo compartilhados com a equipe.
+Não tenho nem como corrigir!
+
+2) O objetivo precisa ser corrigido
+"• Objetivo geral:
+– Desenvolver um projeto de engenharia de software para entrada e saída de dados para calculo do potencial de incrustação na produção de petróleo"
+
+Não é objetivo do projeto de engenharia desenvolver um projeto de engenharia!
+
+Não é objetivo desenvolver um projeto de engenharia de software para entrada e saída de dados!
+
+O objetivo é desenvolver um simulador de engenharia para cálculo do potencial de incrustação na produção de petróleo.
+
+Estranhamente colocam espaços e acentos na modelagem de software, o que não é permitido.
+Mas deixam o texto sem acentos - a palavra cálculo tem acento.
+
+5) não tem o DiagramaDeComunicacao!
+Neste diagrama podemos numerar, mas normalmente não o fazemos, pois basta chamar os métodos existentes para indicar o relacionamento entre os objetos e os métodos associados.
+

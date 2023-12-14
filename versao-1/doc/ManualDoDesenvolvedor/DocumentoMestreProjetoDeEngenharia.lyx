@@ -127,6 +127,17 @@
 \align block
 \begin_inset CommandInset include
 LatexCommand include
+filename "Cap0-Base.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+\begin_inset CommandInset include
+LatexCommand include
 filename "Cap0-Capa-ProjetoDisciplina.lyx"
 
 \end_inset
